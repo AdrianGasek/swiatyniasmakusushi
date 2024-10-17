@@ -1,0 +1,292 @@
+[
+    {
+        "category": "Przystawki",
+        "title": "Przystawki cieple",
+        "items": [
+            {"title": "Krewetki w panko 4 szt.", "price": 33},
+            {"title": "Kalmar w panko 4szt.", "price": 33},
+            {"title": "Pierożki gyoza 6szt.", "price": 22},
+            {"title": "Pierożki vege 6szt.", "price": 14},
+            {"title": "Fasolka Edamame", "price": 13}
+        ]
+    },
+    {
+        "category": "Przystawki",
+        "title": "Przystawki zimne",
+        "items": [
+            {"title": "Tatar z łososia 150g", "price": 38},
+            {"title": "Tatar z łososia z ryżu 200g", "price": 48},
+            {"title": "Tatar z tuńczyka 150g", "price": 40},
+            {"title": "Sałatka Wakame", "price": 14},
+            {"title": "Goma Wakame", "price": 15}
+        ]
+    },
+    {
+        "category": "Zupy",
+        "title": "Zupy",
+        "items": [
+            {"title": "Miso Tofu", "price": 13},
+            {"title": "Miso Sake", "price": 14},
+            {"title": "Miso See Food", "price": 15},
+            {"title": "Tom Yom", "price": 16}
+        ]
+    },
+    {
+        "category": "Rolki pojedyncze",
+        "title": "California Surowe",
+        "items": [
+            {"title": "California Łosoś", "price": 29},
+            {"title": "California Tuńczyk", "price": 33},
+            {"title": "California Surimi", "price": 27},
+            {"title": "California Maślana", "price": 28},
+            {"title": "California Vege", "price": 23}
+        ]
+    },
+    {
+        "category": "Rolki pojedyncze",
+        "title": "California Pieczone",
+        "items": [
+            {"title": "California Łosoś pieczony", "price": 30},
+            {"title": "California Tuńczyk pieczony", "price": 35},
+            {"title": "California Maślana pieczona", "price": 30},
+            {"title": "California Węgorz pieczony", "price": 37},
+            {"title": "California Tuńczyk w tempurze", "price": 36},
+            {"title": "California Kalmar w tempurze", "price": 33},
+            {"title": "California Krewetka w tempurze", "price": 32},
+            {"title": "California Surimi w tempurze", "price": 30},
+            {"title": "California Krewetka parzona", "price": 34}
+        ]
+    },
+    {
+        "category": "Rolki pojedyncze",
+        "title": "Futomaki Surowe",
+        "items": [
+            {"title": "Futomak Łosoś", "price": 27},
+            {"title": "Futomak Tuńczyk", "price": 33},
+            {"title": "Futomak Maślana", "price": 30},
+            {"title": "Futomak Surimi", "price": 26},
+            {"title": "Futomak Tatar z łososia", "price": 44},
+            {"title": "Futomak Tatar z tuńczyka", "price": 44},
+            {"title": "Futomak Sałatka krabowa", "price": 35}
+        ]
+    },
+    {
+        "category": "Rolki pojedyncze",
+        "title": "Futomaki Pieczone",
+        "items": [
+            {"title": "Futomak Łosoś pieczony", "price": 30},
+            {"title": "Furomak Tuńczyk pieczony", "price": 36},
+            {"title": "Futomak Maślana pieczona", "price": 30},
+            {"title": "Futomak Węgorze pieczony", "price": 44},
+            {"title": "Futomak Krewetka w tempurze", "price": 34},
+            {"title": "Futomak Kalmar w tempurze", "price": 34},
+            {"title": "Futomak Tuńczyk w tempurze", "price": 37},
+            {"title": "Futomak Łosoś w tempurze", "price": 37},
+            {"title": "Futomak Tatar z łososia w tempurze", "price": 47},
+            {"title": "Futomak Tatar z tuńczyka w tempurze", "price": 49}
+        ]
+    },
+    {
+        "category": "Rolki pojedyncze",
+        "title": "Hosomaki",
+        "items": [
+            {"title": "Hosomak Łosoś", "price": 18},
+            {"title": "Hosomak Tuńczyk", "price": 22},
+            {"title": "Hosomak Maślana", "price": 20},
+            {"title": "Hosomak Węgorz", "price": 24},
+            {"title": "Hosomak Surimi", "price": 17},
+            {"title": "Hosomak Krewetka w tempurze", "price": 23},
+            {"title": "Hosomak Krewetka parzona", "price": 23},
+            {"title": "Hosomak Ogórek", "price": 14},
+            {"title": "Hosomak Oshinko", "price": 14},
+            {"title": "Hosomak Tykwa", "price": 14},
+            {"title": "Hosomak Awokado", "price": 16}
+        ]
+    },
+    {
+        "category": "Rolki pojedyncze",
+        "title": "Nigiri",
+        "items": [
+            {"title": "Nigiri Łosoś", "price": 18},
+            {"title": "Nigiri Tuńczyk", "price": 23},
+            {"title": "Nigiri Maślana", "price": 18},
+            {"title": "Nigiri Węgorz", "price": 25},
+            {"title": "Nigiri Krewetka parzona", "price": 24}
+        ]
+    },
+    {
+        "category": "Rolki pojedyncze",
+        "title": "Gunkan",
+        "items": [
+            {"title": "Gunkan Łosoś", "price": 26},
+            {"title": "Gunkan Tuńczyk", "price": 27}
+        ]
+    },
+    {
+        "category": "Rolki pojedyncze",
+        "title": "Tamago",
+        "items": [
+            {"title": "Tamago Łosoś", "price": 33},
+            {"title": "Tamago Tuńczyk", "price": 34},
+            {"title": "Tamago Maślana", "price": 36},
+            {"title": "Tamago Węgorz", "price": 36},
+            {"title": "Tamago Surimi", "price": 30},
+            {"title": "Tamago Krewetka w tempurze", "price": 37},
+            {"title": "Tamago Krewetka parzona", "price": 38}
+        ]
+    },
+    {
+        "category": "Rolki pojedyncze",
+        "title": "Sashimi",
+        "items": [
+            {"title": "Sashimi Łosoś", "price": 27},
+            {"title": "Sashimi Tuńczyk", "price": 29},
+            {"title": "Sashimi Maślana", "price": 25},
+            {"title": "Sashimi Węgorz", "price": 29},
+            {"title": "Sashimi Krewetka", "price": 28}
+        ]
+    },
+    {
+        "category": "Zestawy",
+        "title": "Zestawy dla 2 osób",
+        "items": [
+            {
+                "title": "Warsaw Set",
+                "price": 111
+            },
+            {
+                "title": "Barcelona Set",
+                "price": 107
+            },
+            {
+                "title": "Paris Set",
+                "price": 66
+            }
+        ]
+    },
+    {
+        "category": "Zestawy",
+        "title": "Zestawy dla 4 osób",
+        "items": [
+            {
+                "title": "New York Set",
+                "price": 199
+            },
+            {
+                "title": "Madrid Set",
+                "price": 233
+            },
+            {
+                "title": "Bogota Set",
+                "price": 333
+            }
+        ]
+    },
+    {
+        "category": "Lunche",
+        "title": "Lunche",
+        "items": [
+            {
+                "title": "Lunch 1",
+                "price": 55
+            },
+            {
+                "title": "Lunch 2",
+                "price": 66
+            },
+            {
+                "title": "Lunch 3",
+                "price": 66
+            },
+            {
+                "title": "Lunch 4",
+                "price": 36
+            }
+        ]
+    },
+    {
+        "category": "Special Rolls",
+        "items": [
+            {
+                "title": "California Łosoś owijana łososiem z tobiko",
+                "price": 49
+            },
+            {
+                "title": "California Krewetka w tempurze owijana węgorzem",
+                "price": 59
+            },
+            {
+                "title": "California Rainbow surimi owijana 3 rybami Tuńczyk/Maślana/Łosoś",
+                "price": 51
+            },
+            {
+                "title": "California Krewetka w tempurze owijana łososiem",
+                "price": 53
+            },
+            {
+                "title": "Futomak Sashimi Tuńczyk/Maślana/Łosoś",
+                "price": 59
+            },
+            {
+                "title": "Futomak Softshell",
+                "price": 63
+            },
+            {
+                "title": "Tamago Łosoś tobiko",
+                "price": 55
+            }
+        ]
+    },
+    {
+        "category": "Burgery",
+        "title": "Burgery",
+        "items": [
+            {
+                "title": "Burger Szefa Kuchni z frytkami",
+                "price": 66
+            }
+        ]
+    },
+    {
+        "category": "Dla dzieci",
+        "title": "Dla dzieci",
+        "items": [
+            {"title": "Hosomak w płatku sojowym", "price": 20},
+            {"title": "Frytki z batatów", "price": 15},
+            {"title": "Łosoś w Panko z ryżem", "price": 29}
+        ]
+    },
+    {
+        "category": "Desery",
+        "title": "Desery",
+        "items": [
+            {"title": "Lody smażone 3 kulki", "price": 30},
+            {"title": "Sernik z zielonej herbaty", "price": 22},
+            {"title": "Owoce w tempurze", "price": 19},
+            {"title": "Ciasteczka Mochi 3szt.", "price": 14},
+            {"title": "Tamago z nutellą i owocami", "price": 27}
+        ]
+    },
+    {
+        "category": "Dodatki",
+        "title": "Dodatki",
+        "items": [
+            {"title": "Kuleczki ryżowe", "price": 7},
+            {"title": "Sosy", "price": 6},
+            {"title": "Dodatkowy imbir i wasabi", "price": 6}
+        ]
+    },
+    {
+        "category": "Napoje",
+        "title": "Napoje",
+        "items": [
+            {"title": "Pepsi", "price": 12},
+            {"title": "Pepsi max", "price": 12},
+            {"title": "Woda niegazowana", "price": 10},
+            {"title": "Woda gazowa", "price": 10},
+            {"title": "Aloes", "price": 15},
+            {"title": "Matcha Latte", "price": 25},
+            {"title": "Matcha Latte Ice", "price": 25}
+        ]
+    }
+]

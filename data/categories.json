@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "category": "Przystawki"
+    },
+    {
+        "id": 2,
+        "category": "Zupy"
+    },
+    {
+        "id": 3,
+        "category": "Rolki pojedyncze"
+    },
+    {
+        "id": 4,
+        "category": "Zestawy"
+    },
+    {
+        "id": 5,
+        "category": "Lunch"
+    },
+    {
+        "id": 6,
+        "category": "Special rolls"
+    },
+    {
+        "id": 7,
+        "category": "Burgery"
+    },
+    {
+        "id": 8,
+        "category": "Dla dzieci"
+    },
+    {
+        "id": 9,
+        "category": "Desery"
+    },
+    {
+        "id": 10,
+        "category": "Dodatki"
+    },
+    {
+        "id": 11,
+        "category": "Napoje"
+    }
+]
