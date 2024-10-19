@@ -1,15 +1,20 @@
 "use client";
 import React, { useCallback, useEffect, useState } from "react";
-import { GoogleMap, LoadScript, Marker, StandaloneSearchBox } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  LoadScript,
+  Marker,
+  StandaloneSearchBox,
+} from "@react-google-maps/api";
 import { FaPhone } from "react-icons/fa6";
 import Button from "@/components/Button";
 
 // ChIJdVb38fDRHkcRfhuxSB1eWPs
 
 const center = {
-    lat: 52.26228337187806, // szerokość geograficzna
-    lng: 21.155938112983886  // długość geograficzna
-  };
+  lat: 52.26228337187806, // szerokość geograficzna
+  lng: 21.155938112983886, // długość geograficzna
+};
 
 const mapOptions = [
   {
@@ -192,43 +197,50 @@ const mapOptions = [
 ];
 
 const Kontakt = () => {
-    const initialHeight = window ? window.innerHeight - 114 : null;
-    const [containerStyle, setContainerStyle] = useState({width: "100%", height: initialHeight});
-    const [place, setPlace] = useState(null);  // Zmienna na dane miejsca
+  const initialHeight = window ? window.innerHeight - 114 : null;
+  const [containerStyle, setContainerStyle] = useState({
+    width: "100%",
+    height: initialHeight,
+  });
+  const [place, setPlace] = useState(null); // Zmienna na dane miejsca
 
-  const center = place ? { lat: place.geometry.location.lat(), lng: place.geometry.location.lng() } : { lat: 52.26228337187806, lng: 21.155938112983886 };
+  const center = place
+    ? { lat: place.geometry.location.lat(), lng: place.geometry.location.lng() }
+    : { lat: 52.26228337187806, lng: 21.155938112983886 };
 
-    useEffect(() => {
-        const updateHeight = () => {
-            setContainerStyle({...containerStyle, height: window.innerHeight - 114});
-        };
-        updateHeight();
-        window.addEventListener("resize", updateHeight);
-        return () => {
-            window.removeEventListener("resize", updateHeight);
-        };
-    }, []);
+  useEffect(() => {
+    const updateHeight = () => {
+      setContainerStyle({
+        ...containerStyle,
+        height: window.innerHeight - 114,
+      });
+    };
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+    };
+  }, []);
 
+  const onLoad = useCallback((map) => {
+    // Sprawdź, czy obiekt google jest dostępny
+    if (window.google && window.google.maps) {
+      const service = new window.google.maps.places.PlacesService(map);
 
-    const onLoad = useCallback((map) => {
-        // Sprawdź, czy obiekt google jest dostępny
-        if (window.google && window.google.maps) {
-          const service = new window.google.maps.places.PlacesService(map);
-    
-          const request = {
-            placeId: "ChIJLRhSpd9NGIcRG84M_pIwNVk",  // Podaj swój Google Place ID
-            fields: ["name", "geometry"],
-          };
-    
-          service.getDetails(request, (placeResult, status) => {
-            if (status === window.google.maps.places.PlacesServiceStatus.OK) {
-              setPlace(placeResult);
-            } else {
-              console.error("Nie udało się znaleźć miejsca:", status);
-            }
-          });
+      const request = {
+        placeId: "ChIJLRhSpd9NGIcRG84M_pIwNVk", // Podaj swój Google Place ID
+        fields: ["name", "geometry"],
+      };
+
+      service.getDetails(request, (placeResult, status) => {
+        if (status === window.google.maps.places.PlacesServiceStatus.OK) {
+          setPlace(placeResult);
+        } else {
+          console.error("Nie udało się znaleźć miejsca:", status);
         }
-      }, []);
+      });
+    }
+  }, []);
 
   return (
     <div className="w-full px-10 sm: flex justify-center items-center lg:px-0">
@@ -250,7 +262,7 @@ const Kontakt = () => {
               Adres
             </h1>
             <p className="text-[30px] my-5 text-white text-center flex justify-center items-center gap-4">
-            Ignacego Paderewskiego 28 <br /> 04-450 Warszawa
+              Ignacego Paderewskiego 28 <br /> 04-450 Warszawa
             </p>
           </div>
           <div className="flex flex-col">
@@ -261,13 +273,16 @@ const Kontakt = () => {
               Poniedziałek-Piątek 09:00-23:00
             </p>
             <p className="text-[30px] mt-5 text-white text-center flex justify-center items-center">
-              Sobota-Niedziela  09:00-23:00 
+              Sobota-Niedziela 09:00-23:00
             </p>
           </div>
-          <Button text="Zamów teraz" className="relative mt-6 !text-[20px] !mx-auto !self-center"/>
+          <Button
+            text="Zamów teraz"
+            className="relative mt-6 !text-[20px] !mx-auto !self-center"
+          />
         </div>
         <div className="w-full flex flex-col mb-6 lg:w-1/2 !mb-0">
-          <LoadScript
+          {/* <LoadScript
             googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY}
           >
             <GoogleMap
@@ -280,9 +295,9 @@ const Kontakt = () => {
                 styles: mapOptions, // Dodaj style do mapy
               }}
             >
-                {place && <Marker position={center} />}  {/* Wyświetl Marker, jeśli znaleziono miejsce */}
+                {place && <Marker position={center} />}
             </GoogleMap>
-          </LoadScript>
+          </LoadScript> */}
         </div>
       </div>
     </div>
