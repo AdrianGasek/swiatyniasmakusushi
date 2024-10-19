@@ -61,10 +61,10 @@ const MenuComponent = () => {
     <div className="w-full px-10 sm:flex justify-center items-start py-20 bg-black">
       {/* Categories for mobile screens (at the top) */}
       <div className="block sm:hidden text-white mb-8">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6">KATEGORIE</h2>
+        <h2 className="text-3xl font-bold mb-6">KATEGORIE</h2>
         <ul className="flex flex-wrap justify-start">
           <li
-            className={`mr-4 mb-2 cursor-pointer ${
+            className={`text-3xl mr-4 mb-2 cursor-pointer ${
               selectedCategory === "all"
                 ? "text-green-400 underline underline-offset-8"
                 : ""
@@ -76,7 +76,7 @@ const MenuComponent = () => {
           {categories.map((category) => (
             <li
               key={category.id}
-              className={`mr-4 mb-2 cursor-pointer ${
+              className={`text-3xl mr-4 mb-2 cursor-pointer ${
                 selectedCategory === category.category
                   ? "text-green-400 underline underline-offset-8"
                   : ""
@@ -90,13 +90,13 @@ const MenuComponent = () => {
       </div>
 
       {/* Menu items */}
-      <div className="flex flex-col w-full sm:w-1/2 text-white">
+      <div className="sm:w-1/2 text-white flex flex-col w-full items-center h-full max-h-[360px] overflow-y-auto sm:max-h-[600px]">
         {filteredMenu.map((category, index) => (
-          <div key={index} className="mb-8">
-            <h3 className="text-xl font-semibold mb-4">{category.title}</h3>
+          <div key={index} className="mb-8 w-full sm:max-w-[400px] sm:w-full sm:flex flex-col">
+            <h3 className="text-[30px] font-semibold mb-4">{category.title}</h3>
             <ul>
               {category.items.map((item, idx) => (
-                <li key={idx} className="flex justify-between mb-2">
+                <li key={idx} className="flex justify-between mb-2 text-[30px]">
                   <span>{item.title}</span>
                   <span>{item.price}</span>
                 </li>
@@ -107,11 +107,11 @@ const MenuComponent = () => {
       </div>
 
       {/* Categories for larger screens */}
-      <div className="hidden sm:block sm:w-1/2 text-white">
+      <div className="hidden sm:flex sm:w-1/2 text-white justify-center items-center flex-col">
         <h2 className="text-2xl sm:text-3xl font-bold mb-6">KATEGORIE</h2>
-        <ul className="grid grid-flow-row gap-2 grid-cols-[repeat(auto-fit,minmax(0,auto))]">
+        <ul className="grid grid-flow-row gap-1 grid-cols-3">
           <li
-            className={`cursor-pointer ${
+            className={`text-[30px] text-center cursor-pointer ${
               selectedCategory === "all"
                 ? "text-green-400 underline underline-offset-8"
                 : ""
@@ -123,7 +123,7 @@ const MenuComponent = () => {
           {categories.map((category) => (
             <li
               key={category.id}
-              className={`cursor-pointer ${
+              className={`text-[30px] text-center cursor-pointer ${
                 selectedCategory === category.category
                   ? "text-green-400 underline underline-offset-8"
                   : ""

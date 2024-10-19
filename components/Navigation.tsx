@@ -39,7 +39,7 @@ const Navigation = () => {
           <Link href="/galeria" className="transition-colors duration-300 ease-in-out hover:text-green-500">
             Galeria
           </Link>
-          <Link href="/o-nas" className="transition-colors duration-300 ease-in-out hover:text-green-500">
+          <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-green-500">
             O nas
           </Link>
         </div>
@@ -59,7 +59,7 @@ const Navigation = () => {
         className="fixed inset-0 w-full h-full bg-black text-white flex flex-col justify-center items-center z-39"
         >
           <Link
-            href="/o-nas"
+            href="/"
             className="py-4 text-2xl hover:text-green-500"
             onClick={toggleMenu}
           >
