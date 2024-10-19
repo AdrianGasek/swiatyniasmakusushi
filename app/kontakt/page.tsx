@@ -197,7 +197,7 @@ const mapOptions = [
 ];
 
 const Kontakt = () => {
-  const initialHeight = window ? window.innerHeight - 114 : null;
+  const initialHeight = typeof window !== "undefined" ? window.innerHeight - 114 : 300;
   const [containerStyle, setContainerStyle] = useState({
     width: "100%",
     height: initialHeight,
@@ -208,20 +208,22 @@ const Kontakt = () => {
     ? { lat: place.geometry.location.lat(), lng: place.geometry.location.lng() }
     : { lat: 52.26228337187806, lng: 21.155938112983886 };
 
-  useEffect(() => {
-    const updateHeight = () => {
-      const newHeight = window.innerWidth < 600 ? 300 : window.innerHeight - 114;
-      setContainerStyle({
-        ...containerStyle,
-        height: newHeight,
-      });
-    };
-    updateHeight();
-    window.addEventListener("resize", updateHeight);
-    return () => {
-      window.removeEventListener("resize", updateHeight);
-    };
-  }, []);
+    useEffect(() => {
+      if (typeof window !== "undefined") {
+        const updateHeight = () => {
+          const newHeight = window.innerWidth < 600 ? 300 : window.innerHeight - 114;
+          setContainerStyle({
+            ...containerStyle,
+            height: newHeight,
+          });
+        };
+  
+        window.addEventListener("resize", updateHeight);
+        return () => {
+          window.removeEventListener("resize", updateHeight);
+        };
+      }
+    }, []);
 
   const onLoad = useCallback((map) => {
     // Sprawdź, czy obiekt google jest dostępny
