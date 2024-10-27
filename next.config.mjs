@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    domains: ["https://d.basemaps.cartocdn.com"],
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
