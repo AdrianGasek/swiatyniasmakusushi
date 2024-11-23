@@ -4,6 +4,7 @@ import Head from "next/head"; // Importujemy komponent Head
 import Navigation from "@/components/Navigation";
 import { Alumni_Sans_Pinstripe } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const alumni = Alumni_Sans_Pinstripe({
   subsets: ["latin"], // Wybierz odpowiedni subset, jeśli potrzebujesz np. cyrylicy
@@ -52,6 +53,7 @@ export default function RootLayout({
       </Head>
       <body className={alumni.className}>
         <GoogleTagManager gtmId="GTM-WSZ827M3" />
+        <GoogleAnalytics gaId="G-Q78LRG4VBE" />
         <Navigation />
         {children}
         <noscript>
